@@ -1,0 +1,9 @@
+(ocamllex lexer)
+
+(menhir
+ (modules generator))
+
+(library
+ (name Parser)
+ (public_name nixfmt.Parser)
+)

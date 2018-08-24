@@ -1,0 +1,14 @@
+opam-version: "1.2"
+version: ""
+maintainer: "joerg@thalheim.io"
+authors: ["Mic92"]
+homepage: "https://github.com/Mix92/nixfmt"
+bug-reports: "https://github.com/Mic92/nixfmt/issues"
+dev-repo: "https://github.com/Mic92/nixfmt"
+license: "MIT"
+build: [["jbuilder" "build" "-p" name "-j" jobs "@install"]]
+build-test: [["jbuilder" "runtest" "-p" name "-j" jobs]]
+depends: [
+  "core"
+  "menhir"
+]

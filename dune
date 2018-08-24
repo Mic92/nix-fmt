@@ -1,0 +1,12 @@
+
+(library
+ (name nixfmt)
+ (public_name nixfmt)
+ (modules ())
+ (libraries nixfmt.Parser)
+)
+
+(executable
+ (name main)
+ (modules main)
+ (libraries nixfmt))
