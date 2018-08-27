@@ -6,4 +6,5 @@
 (library
  (name Parser)
  (public_name nixfmt.Parser)
+ (libraries core)
 )

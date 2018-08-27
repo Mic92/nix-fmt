@@ -1,4 +1,4 @@
-%token <int> INT
+%token <int64> INT
 %token <float> FLOAT
 %token <string> ID
 %token <string> STRING
@@ -22,12 +22,15 @@
 %token IMPL
 %token UPDATE
 %token CONCAT
-
+%token DOLLAR_CURLY
+%token CURLY_CLOSED
+%token CURLY_OPENED
 %token EOF
-%start <Nix.value option> exp
+
+%start <Nix.value option> parse
 %%
 
-exp:
+parse:
   | v = value { Some v }
   | EOF       { None } ;
 

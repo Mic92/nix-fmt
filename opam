@@ -6,5 +6,5 @@ authors: ["Mic92"]
 license: "MIT"
 
 depends: [
-  "menhir"
+  "core"
 ]
